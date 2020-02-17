@@ -34,7 +34,7 @@ module.exports = {
         await Programmer.findByIdAndRemove({ _id: req.params.id}, (err, task)=>{
 
             if(err){
-                res.send(err);
+                res.send( err );
             }
             res.send({"message": "OK"});
         });
